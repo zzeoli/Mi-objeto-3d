@@ -3,13 +3,13 @@
     <script src="https://aframe.io/releases/1.7.1/aframe.min.js"></script>
   </head>
   <body>
+          <a-light type="directional" position="2 4 -3"></a-light>
     <a-scene>
       <a-assets>
         <a-asset-item id="juguito" src="juguito.glb"></a-asset-item>
       </a-assets>
       <a-entity gltf-model="#juguito" position="0 0 -1" rotation="0 0 0" scale="1 1 1"></a-entity>
       <a-sky color="#96e0d9"></a-sky>
-      <a-light type="directional" position="2 4 -3"></a-light>
     </a-scene>
   </body>
 </html>
