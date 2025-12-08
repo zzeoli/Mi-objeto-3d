@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+     <head>
+        <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+        <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+    </head>
+    <body style="margin : 0px; overflow: hidden;">
+     <a-scene embedded arjs>
+          <a-marker preset="hiro">
+                 <a-assets>
+        <a-asset-item id="pizza" src=".glb"></a-asset-item>
+      </a-assets>
+      <a-entity gltf-model="#pizza" position="0.731 0.90 0" rotation="0 100 0" scale="0.5 0.5 0.5"></a-entity>
+      <a-entity environment="preset: default; lighting: bright; skyType: none;"></a-entity>
+      <a-sky color="#ffb887"></a-sky>
+           </a-marker>
+        <a-entity camera></a-entity>
+        </a-scene>
+    </body>
+</html>
